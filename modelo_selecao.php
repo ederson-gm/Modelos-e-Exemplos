@@ -44,7 +44,14 @@ if($_POST['GRAVAR']){
         </style>
 
         <script language="JavaScript">
-            $(document).ready(function() {
+            $(document).ready(function(e) {
+                $("#elemento").click(function(){
+                    $("#elemento").toggle();
+                });
+            });
+
+            $(window).on('load', function(e) {
+            /*window.onload = function(){*/
                 $("#elemento").click(function(){
                     $("#elemento").toggle();
                 });
